@@ -1,0 +1,12 @@
+[
+  { "id":1,"tariffName": "Netmax 1", "dlSpeed": 1, "ulSpeed":1, "benefits": ["Benifit 1","Benifit 2","Benefit 3"], "price": 125.25},
+  { "id":2,"tariffName": "Netmax 2", "dlSpeed": 2,"ulSpeed":2, "benefits": ["Benifit 1","Benifit 2","Benefit 3"], "price": 225.25},
+  { "id":3,"tariffName": "Netmax 40", "dlSpeed": 40,"ulSpeed":10, "benefits": ["Benifit 1","Benifit 2","Benefit 3"], "price": 325.25},
+  { "id":4,"tariffName": "Netmax 100", "dlSpeed": 100,"ulSpeed":50, "benefits": ["Benifit 1","Benifit 2","Benefit 3"], "price": 525.25},
+  { "id":5,"tariffName": "Netmax 120", "dlSpeed": 120,"ulSpeed":60, "benefits": ["Benifit 1","Benifit 2","Benefit 3"], "price":625},
+  { "id":6,"tariffName": "Netpro 1GB", "dlSpeed": 1000,"ulSpeed":120, "benefits": ["Benifit 1","Benifit 2","Benefit 3"], "price":1125.25},
+  { "id":7,"tariffName": "Netpro 2GB", "dlSpeed": 2000,"ulSpeed":300, "benefits": ["Benifit 1","Benifit 2","Benefit 3"], "price": 2125.25},
+  { "id":8,"tariffName": "Netpro 1GB UL", "dlSpeed": 1000,"ulSpeed":120, "benefits": ["Benifit 1","Benifit 2","Benefit 3"], "price": 3125.25},
+  { "id":9,"tariffName": "Netpro 2GB UL", "dlSpeed": 2000,"ulSpeed":300, "benefits": ["Benifit 1","Benifit 2","Benefit 3"], "price": 4125.25}
+
+]

@@ -1,0 +1,146 @@
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.listbox {
+  @include flex-col;
+  min-height: calc(100vh - 16px);
+  width: 100%;
+  gap: 5px;
+  .list-item {
+    @include flex-row;
+    padding: 8px;
+    font-weight: 600;
+    border: 1px solid #b7b4b4;
+    border-radius: 5px;
+    &.header {
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      font-size: 18px;
+      .material-icons {
+        margin-left: 4px;
+        cursor: pointer;
+      }
+      .item-price{
+        @include flex-row;
+        justify-content: flex-start;
+      }
+    }
+    .item-index {
+      flex: 3;
+    }
+    .item-name {
+      padding: 8px;
+      flex: 6;
+      @media screen and (min-width: 469px) {
+        flex: 4;
+      }
+    }
+    .item-speed-stats {
+      padding: 8px;
+      flex: 4;
+      @media screen and (min-width: 469px) {
+        flex: 6;
+      }
+      @include flex-row;
+      .chart {
+        width: 50px;
+        .mobile-speed-stats {
+          @include flex-col;
+          gap: 4px;
+          .speed-number {
+            @include flex-row;
+            justify-content: space-between;
+          }
+          .denomination {
+            text-align: center;
+          }
+        }
+        .speed-stats {
+          @include flex-col;
+          gap: 8px;
+          .download,
+          .upload {
+            @include flex-col;
+            gap: 2px;
+          }
+        }
+      }
+    }
+    .item-benefits {
+      @media screen and (min-width: 469px) {
+        flex: 6;
+      }
+    }
+    .item-price {
+      padding: 8px;
+      flex: 7;
+      @include flex-row;
+      justify-content: space-evenly;
+      @media screen and (min-width: 469px) {
+        flex: 3;
+        @include flex-col;
+        justify-content: space-evenly;
+        .price-label {
+          text-align: right;
+        }
+      }
+    }
+    .material-icons {
+      font-size: 16px;
+      &.download {
+        color: green;
+      }
+      &.upload {
+        color: red;
+      }
+    }
+    .bordered {
+      @include flex-row;
+      align-items: center;
+      border: 1px solid #a19e9e;
+      height: 100%;
+      @media screen and (min-width: 469px) {
+        height: 25px;
+        justify-content: center;
+        color: black;
+        box-shadow: 3px 3px 4px 0px #958f8f;
+        .material-icons {
+          font-size: 12px;
+          margin-left: 4px;
+        }
+      }
+      font-size: 12px;
+      align-items: center;
+      box-shadow: 3px 0px 4px 0px #958f8f;
+      color: #958f8f;
+    }
+  }
+}
+
+//common
+.speed-graph {
+  @include flex-row;
+  width: 150px;
+  border: 1px solid black;
+  align-items: center;
+  padding: 2px;
+  border-radius: 16px;
+  font-size: 14px;
+  .icon {
+    flex: 1;
+    justify-content: center;
+    @include flex-row;
+    border-right: 1px solid black;
+  }
+  .speed {
+    flex: 4;
+    justify-content: center;
+    @include flex-row;
+  }
+}
